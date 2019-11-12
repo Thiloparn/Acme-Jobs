@@ -15,8 +15,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form readonly="true">
-
+<acme:form>
 	<acme:form-textbox code="anonymous.companyRecord.form.label.name" path="name"/>
 	<acme:form-textbox code="anonymous.companyRecord.form.label.sector" path="sector"/>
 	<acme:form-textbox code="anonymous.companyRecord.form.label.ceo" path="ceo"/>
@@ -26,5 +25,22 @@
 	<acme:form-url code="anonymous.companyRecord.form.label.email" path="email"/>
 	<acme:form-checkbox code="anonymous.companyRecord.form.label.isIncorporated" path="isIncorporated"/>
 	<acme:form-integer code="anonymous.companyRecord.form.label.numberStars" path="numberStars"/>
-	<acme:form-return code="anonymous.companyRecord.form.button.return"/>
+	
+	<acme:form-submit test="${command == 'show'}"
+		code="anonymous.companyRecord.form.button.update"
+		action="/anonymous/company-record/update"/>
+	<acme:form-submit test="${command == 'show'}"
+		code="anonymous.companyRecord.form.button.delete"
+		action="/anonymous/company-record/delete"/>
+	<acme:form-submit test="${command == 'create'}"
+		code="anonymous.companyRecord.form.button.create"
+		action="/anonymous/company-record/create"/>
+	<acme:form-submit test="${command == 'update'}"
+		code="anonymous.companyRecord.form.button.update"
+		action="/anonymous/company-record/update"/>
+	<acme:form-submit test="${command == 'delete'}"
+		code="anonymous.companyRecord.form.button.delete"
+		action="/anonymous/company-record/delete"/>
+	<acme:form-return
+		code="anonymous.companyRecord.form.button.return"/>
 </acme:form>
