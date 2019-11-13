@@ -33,9 +33,6 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.announcement.list = Announcements lists
 master.menu.anonymous.company-record.list = Company Records lists
 master.menu.anonymous.company-record.five-stars = Best company records
-master.menu.anonymous.company-record.create = Create company records
-master.menu.anonymous.company-record.update = Update company records
-master.menu.anonymous.company-record.delete = Delete company records
 master.menu.anonymous.announcement = Announcements
 
 
@@ -53,11 +50,6 @@ master.menu.authenticated.offer.list = Offers lists
 master.menu.authenticated.challenge.list = Challenges list
 master.menu.authenticated.investor-record.list = Investors records lists
 master.menu.authenticated.company-record.list = Company Records lists
-master.menu.authenticated.company-record.create = Create company records
-master.menu.authenticated.company-record.update = Update company records
-master.menu.authenticated.company-record.delete = Delete company records
-
-
 
 # master.menu.administrator ###################################################
 
@@ -68,6 +60,7 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement.list = Announcements lists
 master.menu.administrator.customisation-parameter = Customization Parameters
 master.menu.administrator.dashboard.show = Display Dashboard
+master.menu.administrator.company-record.create = Create company records
 
 # master.menu.provider ########################################################
 

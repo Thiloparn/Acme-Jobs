@@ -15,7 +15,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form>
+<acme:form readonly="true">
 	<acme:form-textbox code="authenticated.companyRecord.form.label.name" path="name"/>
 	<acme:form-textbox code="authenticated.companyRecord.form.label.sector" path="sector"/>
 	<acme:form-textbox code="authenticated.companyRecord.form.label.ceo" path="ceo"/>
@@ -25,22 +25,4 @@
 	<acme:form-textbox code="authenticated.companyRecord.form.label.email" path="email"/>
 	<acme:form-checkbox code="authenticated.companyRecord.form.label.isIncorporated" path="isIncorporated"/>
 	<acme:form-integer code="authenticated.companyRecord.form.label.numberStars" path="numberStars" placeholder="1 2 3 4 5"/>
-	
-	<acme:form-submit test="${command == 'show'}"
-		code="authenticated.companyRecord.form.button.update"
-		action="/authenticated/company-record/update"/>
-	<acme:form-submit test="${command == 'show'}"
-		code="authenticated.companyRecord.form.button.delete"
-		action="/authenticated/company-record/delete"/>
-	<acme:form-submit test="${command == 'create'}"
-		code="authenticated.companyRecord.form.button.create"
-		action="/authenticated/company-record/create"/>
-	<acme:form-submit test="${command == 'update'}"
-		code="authenticated.companyRecord.form.button.update"
-		action="/authenticated/company-record/update"/>
-	<acme:form-submit test="${command == 'delete'}"
-		code="authenticated.companyRecord.form.button.delete"
-		action="/authenticated/company-record/delete"/>
-	<acme:form-return
-		code="authenticated.companyRecord.form.button.return"/>
 </acme:form>

@@ -33,9 +33,6 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.announcement.list = Lista de anuncios
 master.menu.anonymous.company-record.list = Lista de registros de la compañia
 master.menu.anonymous.company-record.five-stars = Mejores registros de la compañia
-master.menu.anonymous.company-record.create = Crear registros de la compañia
-master.menu.anonymous.company-record.update = Actualizar registros de la compañia
-master.menu.anonymous.company-record.delete = Borrar registros de la compañia
 
 master.menu.anonymous.announcement = Anuncios
 master.menu.anonymous.announcement.list = Lista de anuncios
@@ -54,9 +51,6 @@ master.menu.authenticated.offer.list = Lista de ofertas
 master.menu.authenticated.challenge.list = Lista de desafios
 master.menu.authenticated.investor-record.list = Lista de registros de inversores
 master.menu.authenticated.company-record.list = Lista de registros de la compañia
-master.menu.authenticated.company-record.create = Crear registros de la compañia
-master.menu.authenticated.company-record.update = Actualizar registros de la compañia
-master.menu.authenticated.company-record.delete = Borrar registros de la compañia
 
 
 # master.menu.administrator ###################################################
@@ -68,6 +62,7 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement.list = Lista de anuncios
 master.menu.administrator.customisation-parameter = Parametros de customizacion
 master.menu.administrator.dashboard.show = Mostrar Tablon de datos
+master.menu.administrator.company-record.create = Crear registros de compania
 
 # master.menu.provider ########################################################
 
