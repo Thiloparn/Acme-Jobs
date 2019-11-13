@@ -27,4 +27,7 @@ anonymous.companyRecord.form.label.phone = Telefono
 anonymous.companyRecord.form.label.email = Email
 anonymous.companyRecord.form.label.isIncorporated = Esta incorporado
 anonymous.companyRecord.form.label.numberStars = Numero de estrellas
+anonymous.companyRecord.form.button.create = Crear
+anonymous.companyRecord.form.button.update = Actualizar
+anonymous.companyRecord.form.button.delete = Borrar
 anonymous.companyRecord.form.button.return = Volver

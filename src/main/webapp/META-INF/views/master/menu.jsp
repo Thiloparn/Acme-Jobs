@@ -23,10 +23,11 @@
 		
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list"/>
-      <acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
+      		<acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.investor-record.list" action="/anonymous/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.investor-record.five-stars" action="/anonymous/investor-record/five-stars"/>
 			<acme:menu-suboption code="master.menu.anonymous.company-record.five-stars" action="/anonymous/company-record/five-stars"/>
+			<acme:menu-suboption code="master.menu.anonymous.company-record.create" action="/anonymous/company-record/create"/>
 		</acme:menu-option>
 		
 		<%-- Yo pondria aqui otro desplegable que sea para los Bulletin, para que no se llene anonimo --%>
@@ -41,6 +42,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.investor-record.list" action="/authenticated/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.offer.list" action="/authenticated/offer/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.solicit.list" action="/authenticated/solicit/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.company-record.create" action="/authenticated/company-record/create"/>
 		</acme:menu-option>
 		
 		<%-- COSAS DE ADMIN --%>

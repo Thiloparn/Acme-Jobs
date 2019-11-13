@@ -20,11 +20,11 @@
 	<acme:form-textbox code="authenticated.companyRecord.form.label.sector" path="sector"/>
 	<acme:form-textbox code="authenticated.companyRecord.form.label.ceo" path="ceo"/>
 	<acme:form-textbox code="authenticated.companyRecord.form.label.description" path="description"/>
-	<acme:form-textbox code="authenticated.companyRecord.form.label.webSite" path="webSite"/>
+	<acme:form-url code="authenticated.companyRecord.form.label.webSite" path="webSite"/>
 	<acme:form-textbox code="authenticated.companyRecord.form.label.phone" path="phone"/>
-	<acme:form-url code="authenticated.companyRecord.form.label.email" path="email"/>
+	<acme:form-textbox code="authenticated.companyRecord.form.label.email" path="email"/>
 	<acme:form-checkbox code="authenticated.companyRecord.form.label.isIncorporated" path="isIncorporated"/>
-	<acme:form-integer code="authenticated.companyRecord.form.label.numberStars" path="numberStars"/>
+	<acme:form-integer code="authenticated.companyRecord.form.label.numberStars" path="numberStars" placeholder="1 2 3 4 5"/>
 	
 	<acme:form-submit test="${command == 'show'}"
 		code="authenticated.companyRecord.form.button.update"

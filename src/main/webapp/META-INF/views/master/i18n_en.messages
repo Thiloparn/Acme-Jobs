@@ -31,9 +31,11 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 
 master.menu.anonymous.announcement.list = Announcements lists
-master.menu.anonymous.investor-record.list = Investors records lists
-master.menu.anonymous.company-record.list = Company Records
+master.menu.anonymous.company-record.list = Company Records lists
 master.menu.anonymous.company-record.five-stars = Best company records
+master.menu.anonymous.company-record.create = Create company records
+master.menu.anonymous.company-record.update = Update company records
+master.menu.anonymous.company-record.delete = Delete company records
 master.menu.anonymous.announcement = Announcements
 
 
@@ -50,7 +52,10 @@ master.menu.authenticated.solicit.list = Requests lists
 master.menu.authenticated.offer.list = Offers lists
 master.menu.authenticated.challenge.list = Challenges list
 master.menu.authenticated.investor-record.list = Investors records lists
-master.menu.authenticated.company-record.list = Company Records
+master.menu.authenticated.company-record.list = Company Records lists
+master.menu.authenticated.company-record.create = Create company records
+master.menu.authenticated.company-record.update = Update company records
+master.menu.authenticated.company-record.delete = Delete company records
 
 
 

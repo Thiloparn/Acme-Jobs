@@ -28,6 +28,15 @@ public class AnonymousCompanyRecordController extends AbstractController<Anonymo
 	@Autowired
 	private AnonymousCompanyRecordListFiveStarsService	fiveStarService;
 
+	@Autowired
+	private AnonymousCompanyRecordCreateService			createService;
+
+	@Autowired
+	private AnonymousCompanyRecordUpdateService			updateService;
+
+	@Autowired
+	private AnonymousCompanyRecordDeleteService			deleteService;
+
 
 	// Constructors -----------------------------------------------------------
 
@@ -35,6 +44,9 @@ public class AnonymousCompanyRecordController extends AbstractController<Anonymo
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 
 		super.addCustomCommand(CustomCommand.FIVE_STARS, BasicCommand.LIST, this.fiveStarService);
 	}
