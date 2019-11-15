@@ -1,5 +1,5 @@
 
-package acme.features.administrator.announcement;
+package acme.features.administrator.companyRecord;
 
 import javax.annotation.PostConstruct;
 
@@ -7,41 +7,37 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.companyRecords.CompanyRecord;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/announcement/")
-public class AdministratorAnnouncementController extends AbstractController<Administrator, Announcement> {
+@RequestMapping("/administrator/company-record/")
+public class AdministratorCompanyRecordController extends AbstractController<Administrator, CompanyRecord> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AdministratorAnnouncementListService	listService;
+	private AdministratorCompanyRecordShowService	showService;
 
 	@Autowired
-	private AdministratorAnnouncementShowService	showService;
+	private AdministratorCompanyRecordCreateService	createService;
 
 	@Autowired
-	private AdministratorAnnouncementCreateService	createService;
+	private AdministratorCompanyRecordUpdateService	updateService;
 
 	@Autowired
-	private AdministratorAnnouncementUpdateService	updateService;
-
-	@Autowired
-	private AdministratorAnnouncementDeleteService	deleteService;
+	private AdministratorCompanyRecordDeleteService	deleteService;
 
 
 	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
-		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 }
