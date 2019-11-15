@@ -8,14 +8,6 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-#COMPANY RECORDS LIST
-
-administrator.companyRecord.list.label.name = Nombre
-administrator.companyRecord.list.label.sector = Sector
-administrator.companyRecord.list.label.description = Descripcion
-administrator.companyRecord.list.label.phone = Telefono
-administrator.companyRecord.list.label.numberStars = Numero de estrellas
-
 #COMPANY RECORDS FORM
 
 administrator.companyRecord.form.label.name = Nombre
@@ -28,6 +20,6 @@ administrator.companyRecord.form.label.email = Email
 administrator.companyRecord.form.label.isIncorporated = Esta incorporado
 administrator.companyRecord.form.label.numberStars = Numero de estrellas
 administrator.companyRecord.form.button.create = Crear
-administrator.companyRecord.form.button.update = Actualizar
-administrator.companyRecord.form.button.delete = Borrar
+administrator.companyRecord.form.button.delete = Delete
+administrator.companyRecord.form.button.update = Update
 administrator.companyRecord.form.button.return = Volver

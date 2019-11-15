@@ -1,8 +1,6 @@
 
 package acme.features.administrator.companyRecord;
 
-import java.util.Collection;
-
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -14,11 +12,4 @@ public interface AdministratorCompanyRecordRepository extends AbstractRepository
 
 	@Query("select a from CompanyRecord a where a.id =?1")
 	CompanyRecord findOnebyId(int id);
-
-	@Query("select a from CompanyRecord a")
-	Collection<CompanyRecord> findManyAll();
-
-	@Query("select a from CompanyRecord a where a.numberStars=5")
-	Collection<CompanyRecord> findManyFiveStar();
-
 }

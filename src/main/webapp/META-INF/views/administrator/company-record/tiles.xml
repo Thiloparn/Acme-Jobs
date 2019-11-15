@@ -17,17 +17,9 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-
-	<definition name="administrator/company-record/list" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/company-record/list.jsp" />
-	</definition>
 	
 	<definition name="administrator/company-record/form" extends="master">
 		<put-attribute name="body" type="template" value="../administrator/company-record/form.jsp" />
-	</definition>
-	
-	<definition name="administrator/company-record/five-stars" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/company-record/list.jsp" />
 	</definition>
 	
 </tiles-definitions>

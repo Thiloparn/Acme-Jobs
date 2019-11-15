@@ -26,21 +26,9 @@
 	<acme:form-checkbox code="administrator.companyRecord.form.label.isIncorporated" path="isIncorporated"/>
 	<acme:form-integer code="administrator.companyRecord.form.label.numberStars" path="numberStars" placeholder="1 2 3 4 5"/>
 	
-	<acme:form-submit test="${command == 'show'}"
-		code="administrator.companyRecord.form.button.update"
-		action="/administrator/company-record/update"/>
-	<acme:form-submit test="${command == 'show'}"
-		code="administrator.companyRecord.form.button.delete"
-		action="/administrator/company-record/delete"/>
 	<acme:form-submit test="${command == 'create'}"
-		code="administrator.companyRecord.form.button.create"
-		action="/administrator/company-record/create"/>
-	<acme:form-submit test="${command == 'update'}"
-		code="administrator.companyRecord.form.button.update"
-		action="/administrator/company-record/update"/>
-	<acme:form-submit test="${command == 'delete'}"
-		code="administrator.companyRecord.form.button.delete"
-		action="/administrator/company-record/delete"/>
-	<acme:form-return
-		code="administrator.companyRecord.form.button.return"/>
+			code="administrator.companyRecord.form.button.create"
+			action="/administrator/company-record/create"/>
+	
+	<acme:form-return code="administrator.companyRecord.form.button.return"/>
 </acme:form>

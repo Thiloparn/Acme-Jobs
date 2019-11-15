@@ -7,16 +7,7 @@
 # this software. It has been tested carefully, but it is not guaranteed for any particular
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
-
-#COMPANY RECORDS LIST
-
-administrator.companyRecord.list.label.name = name
-administrator.companyRecord.list.label.sector =sector
-administrator.companyRecord.list.label.description =description
-administrator.companyRecord.list.label.phone = phone
-administrator.companyRecord.list.label.numberStars =numberStars
 	
-
 #COMPANY RECORDS FORM
 
 administrator.companyRecord.form.label.name = Name
@@ -29,6 +20,6 @@ administrator.companyRecord.form.label.email = Email
 administrator.companyRecord.form.label.isIncorporated = Is incorporated
 administrator.companyRecord.form.label.numberStars = Number stars
 administrator.companyRecord.form.button.create = Create
-administrator.companyRecord.form.button.update = Update
 administrator.companyRecord.form.button.delete = Delete
+administrator.companyRecord.form.button.update = Update
 administrator.companyRecord.form.button.return = Return

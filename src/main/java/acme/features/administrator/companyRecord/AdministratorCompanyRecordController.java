@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.components.CustomCommand;
 import acme.entities.companyRecords.CompanyRecord;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
@@ -20,34 +19,25 @@ public class AdministratorCompanyRecordController extends AbstractController<Adm
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AdministratorCompanyRecordListService			listService;
+	private AdministratorCompanyRecordShowService	showService;
 
 	@Autowired
-	private AdministratorCompanyRecordShowService			showService;
+	private AdministratorCompanyRecordCreateService	createService;
 
 	@Autowired
-	private AdministratorCompanyRecordListFiveStarsService	fiveStarService;
+	private AdministratorCompanyRecordUpdateService	updateService;
 
 	@Autowired
-	private AdministratorCompanyRecordCreateService			createService;
-
-	@Autowired
-	private AdministratorCompanyRecordUpdateService			updateService;
-
-	@Autowired
-	private AdministratorCompanyRecordDeleteService			deleteService;
+	private AdministratorCompanyRecordDeleteService	deleteService;
 
 
 	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
-
-		super.addCustomCommand(CustomCommand.FIVE_STARS, BasicCommand.LIST, this.fiveStarService);
 	}
 }
