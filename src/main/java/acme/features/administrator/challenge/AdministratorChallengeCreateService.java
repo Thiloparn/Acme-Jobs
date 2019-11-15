@@ -50,9 +50,6 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert request != null;
 
 		Challenge result = new Challenge();
-		Date hoy = new Date();
-
-		result.setDeadline(hoy);
 
 		return result;
 	}
@@ -65,8 +62,10 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 
 		Date hoy = new Date();
 
-		boolean esFuturo = hoy.before(entity.getDeadline());
-		errors.state(request, esFuturo, "deadline", "administrator.challenge.error.deadline.esFuturo");
+		if (entity.getDeadline() != null) {
+			boolean esFuturo = hoy.before(entity.getDeadline());
+			errors.state(request, esFuturo, "deadline", "administrator.challenge.error.deadline.esFuturo");
+		}
 	}
 
 	@Override

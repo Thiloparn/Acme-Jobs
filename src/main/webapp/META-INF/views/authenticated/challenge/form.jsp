@@ -23,12 +23,12 @@
 	<acme:form-textbox code="authenticated.challenge.form.label.rewardSilver" path="rewardSilver"/>
 	<acme:form-textbox code="authenticated.challenge.form.label.rewardBronze" path="rewardBronze"/>
 	
-	<acme:check-access test="!hasRole('Administrator')">
-		<acme:form-submit test="${command == show}" code="authenticated.challenge.form.button.update" action="/administrator/challenge/update"/>
-		<acme:form-submit test="${command == show}" code="authenticated.challenge.form.button.delete" action="/administrator/challenge/delete"/>
-		<acme:form-submit test="${command == create}" code="authenticated.challenge.form.button.create" action="/administrator/challenge/create"/>
-		<acme:form-submit test="${command == update}" code="authenticated.challenge.form.button.update" action="/administrator/challenge/update"/>
-		<acme:form-submit test="${command == delete}" code="authenticated.challenge.form.button.delete" action="/administrator/challenge/delete"/>
+	<acme:check-access test="hasRole('Administrator')">
+		<acme:form-submit test="${command == 'show'}" code="administrator.challenge.form.button.update" action="/administrator/challenge/update"/>
+		<acme:form-submit test="${command == 'show'}" code="administrator.challenge.form.button.delete" action="/administrator/challenge/delete"/>
+		<acme:form-submit test="${command == 'create'}" code="administrator.challenge.form.button.create" action="/administrator/challenge/create"/>
+		<acme:form-submit test="${command == 'update'}" code="administrator.challenge.form.button.update" action="/administrator/challenge/update"/>
+		<acme:form-submit test="${command == 'delete'}" code="administrator.challenge.form.button.delete" action="/administrator/challenge/delete"/>
 	</acme:check-access>
 	
 	<acme:form-return code="authenticated.challenge.form.button.return"/>
