@@ -61,12 +61,16 @@
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="master.menu.provider.solicit.create" action="/provider/solicit/create"/>
+		
 		</acme:menu-option>
 
 		<%-- COSAS DE CONSUMER --%>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="master.menu.provider.solicit.create" action="/provider/solicit/create"/>
+			
 		</acme:menu-option>
 	</acme:menu-left>
 		

@@ -70,7 +70,7 @@ master.menu.administrator.company-record.create = Crear registros de compania
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
-
+master.menu.provider.solicit.create = Crear solicitudes
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
