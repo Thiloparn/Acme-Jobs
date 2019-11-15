@@ -10,10 +10,12 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.entities.customisationParameters;
+package acme.entities.customizationParameters;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -22,7 +24,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class CustomisationParameter extends DomainEntity {
+public class CustomizationParameter extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -30,14 +32,14 @@ public class CustomisationParameter extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 
-	@NotNull
+	@NotBlank
 	private String				spamWordsEn;
 
-	@NotNull
+	@NotBlank
 	private String				spamWordsEs;
 
-	@NotNull
-	private Double				threshold;
+	@Range(min = 0, max = 100)
+	private double				threshold;
 
 	// Derived attributes -----------------------------------------------------
 

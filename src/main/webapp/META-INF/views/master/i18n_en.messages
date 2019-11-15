@@ -61,7 +61,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
 master.menu.administrator.announcement.list = Announcements lists
-master.menu.administrator.customisation-parameter = Customization Parameters
+master.menu.administrator.customization-parameter = Customization Parameters
 master.menu.administrator.dashboard.show = Display Dashboard
 
 # master.menu.provider ########################################################
