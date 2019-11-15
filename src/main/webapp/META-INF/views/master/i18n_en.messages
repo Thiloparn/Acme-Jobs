@@ -64,6 +64,8 @@ master.menu.administrator.announcement.list = Announcements lists
 master.menu.administrator.customisation-parameter = Customization Parameters
 master.menu.administrator.dashboard.show = Display Dashboard
 
+master.menu.administrator.challenge.create = Create challenge
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

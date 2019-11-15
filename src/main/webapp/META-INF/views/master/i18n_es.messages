@@ -65,6 +65,8 @@ master.menu.administrator.announcement.list = Lista de anuncios
 master.menu.administrator.customisation-parameter = Parametros de customizacion
 master.menu.administrator.dashboard.show = Mostrar Tablon de datos
 
+master.menu.administrator.challenge.create = Crear desafio
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
