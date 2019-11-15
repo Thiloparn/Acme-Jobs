@@ -8,10 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-#SOLICIT LIST
-provider.solicit.list.label.moment = Momento
-provider.solicit.list.label.deadline = Fecha limite
-provider.solicit.list.label.title = Titulo
+
 
 #SOLICIT FORM
 provider.solicit.form.label.ticker = Codigo:
@@ -26,3 +23,4 @@ provider.solicit.form.error.too-close = La fecha debe estar en el futuro
 provider.solicit.form.error.duplicate = El ticket esta duplicado
 provider.solicit.form.error.currency= La currencia debe ser EUR o €
 provider.solicit.form.label.accept= Aceptar
+provider.solicit.form.error.must-accept= Debe aceptar

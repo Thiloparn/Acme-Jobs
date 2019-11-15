@@ -99,7 +99,7 @@ public class ProviderSolicitCreateService implements AbstractCreateService<Provi
 		}
 		if (!errors.hasErrors("reward")) {
 			euro = money.getCurrency().equals("EUR") || money.getCurrency().equals("€");
-			errors.state(request, euro, "reward", "provider.solicit.form.error.currency");
+			errors.state(request, euro, "reward", "provider.solicit.form.error.must-accept");
 		}
 
 		isAccepted = request.getModel().getBoolean("accept");
