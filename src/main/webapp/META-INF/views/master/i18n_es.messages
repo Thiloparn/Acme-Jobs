@@ -69,6 +69,7 @@ master.menu.administrator.dashboard.show = Mostrar Tablon de datos
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.consumer.offer.create= Crear ofertas
 
 # master.menu.consumer ##########################################################
 

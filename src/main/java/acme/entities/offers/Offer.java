@@ -36,15 +36,16 @@ public class Offer extends DomainEntity {
 	@Past
 	private Date				moment;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
-	//@Future
+
 	private Date				deadline;
 
 	@NotBlank
 	private String				text;
 
-	@Valid
 	@NotNull
+	@Valid
 	private Money				maxMoney;
 
 	@NotNull
