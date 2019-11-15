@@ -69,7 +69,7 @@ master.menu.administrator.dashboard.show = Mostrar Tablon de datos
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
-
+master.menu.provider.solicit.create = Crear solicitudes
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor

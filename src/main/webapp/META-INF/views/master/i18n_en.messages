@@ -68,6 +68,7 @@ master.menu.administrator.dashboard.show = Display Dashboard
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.solicit.create = Create solicits
 
 # master.menu.consumer ##########################################################
 
