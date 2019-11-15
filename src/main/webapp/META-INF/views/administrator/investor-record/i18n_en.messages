@@ -10,16 +10,19 @@
 
 #INVESTOR RECORD LIST
 
-authenticated.investor-record.list.label.name = Name
-authenticated.investor-record.list.label.sector = Sector
-authenticated.investor-record.list.label.stars = Stars
+administrator.investor-record.list.label.name = Name
+administrator.investor-record.list.label.sector = Sector
+administrator.investor-record.list.label.stars = Stars
 
 #INVESTOR RECORD FORM
 
-authenticated.investor-record.form.label.name = Name:
-authenticated.investor-record.form.label.sector = Sector:
-authenticated.investor-record.form.label.invStatement = Investor Statement:
-authenticated.investor-record.form.label.stars = Stars:
-authenticated.investor-record.form.button.return = Return
+administrator.investor-record.form.label.name = Name:
+administrator.investor-record.form.label.sector = Sector:
+administrator.investor-record.form.label.invStatement = Investor Statement:
+administrator.investor-record.form.label.stars = Stars:
+administrator.investor-record.form.button.return = Return
 administrator.investor-record.form.button.update = Update
 administrator.investor-record.form.button.delete = Delete
+administrator.investor-record.form.button.create = Create
+
+

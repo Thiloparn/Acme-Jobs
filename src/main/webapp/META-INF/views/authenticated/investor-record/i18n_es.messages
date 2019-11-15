@@ -21,3 +21,5 @@ authenticated.investor-record.form.label.sector = Sector:
 authenticated.investor-record.form.label.invStatement = Declaración del inversor:
 authenticated.investor-record.form.label.stars = Estrellas:
 authenticated.investor-record.form.button.return = Volver
+administrator.investor-record.form.button.update = Actualizar
+administrator.investor-record.form.button.delete = Borrar
