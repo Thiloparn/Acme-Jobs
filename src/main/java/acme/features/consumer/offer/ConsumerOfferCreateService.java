@@ -79,13 +79,14 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 		Calendar calendar;
 		Date minimunDeadLine;
 		Offer existing;
-
-		Money minMoney;
 		Money maxMoney;
-		minMoney = entity.getMinMoney();
+		Money minMoney;
+
 		maxMoney = entity.getMaxMoney();
-		boolean MinEuro;
+		minMoney = entity.getMinMoney();
+
 		boolean MaxEuro;
+		boolean MinEuro;
 		boolean isAccepted;
 		boolean esMenor;
 
@@ -102,17 +103,21 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 			errors.state(request, existing == null, "ticker", "consumer.offer.form.error.duplicate");
 		}
 
+		if (!errors.hasErrors("maxMoney")) {
+			MaxEuro = maxMoney.getCurrency().equals("EUR") || maxMoney.getCurrency().equals("€");
+			errors.state(request, MaxEuro, "maxMoney", "consumer.offer.form.error.currency");
+		}
+
 		if (!errors.hasErrors("minMoney")) {
 			MinEuro = minMoney.getCurrency().equals("EUR") || minMoney.getCurrency().equals("€");
-			esMenor = minMoney.getAmount() <= maxMoney.getAmount();
-			errors.state(request, esMenor, "minMoney", "consumer.offer.form.error.min.amount");
 			errors.state(request, MinEuro, "minMoney", "consumer.offer.form.error.currency");
 
 		}
 
-		if (!errors.hasErrors("maxMoney")) {
-			MaxEuro = maxMoney.getCurrency().equals("EUR") || maxMoney.getCurrency().equals("€");
-			errors.state(request, MaxEuro, "maxMoney", "consumer.offer.form.error.currency");
+		if (!errors.hasErrors("minMoney") && !errors.hasErrors("maxMoney")) {
+			esMenor = minMoney.getAmount() <= maxMoney.getAmount();
+			errors.state(request, esMenor, "maxMoney", "consumer.offer.form.error.max.amount");
+			errors.state(request, esMenor, "minMoney", "consumer.offer.form.error.min.amount");
 		}
 
 		isAccepted = request.getModel().getBoolean("accept");

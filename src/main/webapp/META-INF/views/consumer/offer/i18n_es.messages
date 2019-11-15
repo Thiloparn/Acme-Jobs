@@ -27,3 +27,4 @@ consumer.offer.form.label.maxMoney = Dinero máximo
 consumer.offer.form.label.minMoney = Dinero mínimo
 consumer.offer.form.error.must-accept = Debe aceptar
 consumer.offer.form.error.min.amount = El mínimo no puede ser más grande que el máximo
+consumer.offer.form.error.max.amount = El máximo no puede ser menor que el mínimo
