@@ -63,8 +63,10 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 	@Override
 	public Offer instantiate(final Request<Offer> request) {
 		Offer result;
-
 		result = new Offer();
+
+		Date hoy = new Date();
+		result.setDeadline(hoy);
 		return result;
 	}
 
