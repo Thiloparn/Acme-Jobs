@@ -28,11 +28,11 @@
 	
 	<acme:check-access test="hasRole('Administrator')">
 		<acme:form-submit test="${command == 'show'}"
-			code="administrator.companyRecord.form.button.delete"
-			action="/administrator/company-record/delete"/>
-		<acme:form-submit test="${command == 'show'}"
 			code="administrator.companyRecord.form.button.update"
 			action="/administrator/company-record/update"/>
+		<acme:form-submit test="${command == 'show'}"
+			code="administrator.companyRecord.form.button.delete"
+			action="/administrator/company-record/delete"/>
 		<acme:form-submit test="${command == 'delete'}"
 			code="administrator.companyRecord.form.button.delete"
 			action="/administrator/company-record/delete"/>
