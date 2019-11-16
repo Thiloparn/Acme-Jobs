@@ -31,8 +31,7 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 
 master.menu.anonymous.announcement.list = Announcements lists
-master.menu.anonymous.investor-record.list = Investors records lists
-master.menu.anonymous.company-record.list = Company Records
+master.menu.anonymous.company-record.list = Company Records lists
 master.menu.anonymous.company-record.five-stars = Best company records
 master.menu.anonymous.announcement = Announcements
 
@@ -46,13 +45,11 @@ master.menu.anonymous.investor-record.five-stars = Best investor records
 master.menu.authenticated = Authenticated
 
 master.menu.authenticated.announcement.list = Announcements lists
-master.menu.authenticated.solicit.list = Requests lists
+master.menu.authenticated.solicit.list = Solicits lists
 master.menu.authenticated.offer.list = Offers lists
 master.menu.authenticated.challenge.list = Challenges list
 master.menu.authenticated.investor-record.list = Investors records lists
-master.menu.authenticated.company-record.list = Company Records
-
-
+master.menu.authenticated.company-record.list = Company Records lists
 
 # master.menu.administrator ###################################################
 
@@ -63,11 +60,15 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement.list = Announcements lists
 master.menu.administrator.customisation-parameter = Customization Parameters
 master.menu.administrator.dashboard.show = Display Dashboard
+master.menu.administrator.investor-record.create = Create investor record
+master.menu.administrator.announcement.create = Announcement create
+master.menu.administrator.company-record.create = Create company records
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.solicit.create = Create solicits
 
 # master.menu.consumer ##########################################################
 
