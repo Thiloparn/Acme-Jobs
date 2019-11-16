@@ -31,9 +31,7 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 
 master.menu.anonymous.announcement.list = Lista de anuncios
-master.menu.anonymous.investor-record = Registros de inversores
-master.menu.anonymous.investor-record.list = Lista de registros de inversores
-master.menu.anonymous.company-record.list = Registros de la compañia
+master.menu.anonymous.company-record.list = Lista de registros de la compañia
 master.menu.anonymous.company-record.five-stars = Mejores registros de la compañia
 
 master.menu.anonymous.announcement = Anuncios
@@ -52,7 +50,7 @@ master.menu.authenticated.solicit.list = Lista de solicitud
 master.menu.authenticated.offer.list = Lista de ofertas
 master.menu.authenticated.challenge.list = Lista de desafios
 master.menu.authenticated.investor-record.list = Lista de registros de inversores
-master.menu.authenticated.company-record.list = Registros de la compañia
+master.menu.authenticated.company-record.list = Lista de registros de la compañia
 
 
 # master.menu.administrator ###################################################
@@ -64,6 +62,9 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement.list = Lista de anuncios
 master.menu.administrator.customisation-parameter = Parametros de customizacion
 master.menu.administrator.dashboard.show = Mostrar Tablon de datos
+master.menu.administrator.investor-record.create = Crear registro de inversor
+master.menu.administrator.announcement.create = Crear anuncio
+master.menu.administrator.company-record.create = Crear registros de compania
 
 master.menu.administrator.challenge.create = Crear desafio
 
@@ -71,6 +72,8 @@ master.menu.administrator.challenge.create = Crear desafio
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.consumer.offer.create= Crear ofertas
+master.menu.provider.solicit.create = Crear solicitudes
 
 # master.menu.consumer ##########################################################
 
