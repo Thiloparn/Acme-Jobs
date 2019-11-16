@@ -8,10 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-#SOLICIT LIST
-provider.solicit.list.label.moment = Moment
-provider.solicit.list.label.deadline = Deadline
-provider.solicit.list.label.title = Title
+
 
 #SOLICIT FORM
 provider.solicit.form.label.ticker = Ticker:
@@ -26,3 +23,4 @@ provider.solicit.form.error.too-close = The deadline must be future
 provider.solicit.form.error.duplicate = The ticket is duplicated
 provider.solicit.form.error.currency= The currency must be EUR or €
 provider.solicit.form.label.accept= Accept
+provider.solicit.form.error.must-accept= Must accept

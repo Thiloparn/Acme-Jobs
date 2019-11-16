@@ -45,7 +45,7 @@ master.menu.anonymous.investor-record.five-stars = Best investor records
 master.menu.authenticated = Authenticated
 
 master.menu.authenticated.announcement.list = Announcements lists
-master.menu.authenticated.solicit.list = Requests lists
+master.menu.authenticated.solicit.list = Solicits lists
 master.menu.authenticated.offer.list = Offers lists
 master.menu.authenticated.challenge.list = Challenges list
 master.menu.authenticated.investor-record.list = Investors records lists
