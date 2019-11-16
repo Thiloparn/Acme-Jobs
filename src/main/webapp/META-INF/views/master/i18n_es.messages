@@ -66,6 +66,8 @@ master.menu.administrator.investor-record.create = Crear registro de inversor
 master.menu.administrator.announcement.create = Crear anuncio
 master.menu.administrator.company-record.create = Crear registros de compania
 
+master.menu.administrator.challenge.create = Crear desafio
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
