@@ -8,10 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-#Customisation SHOW
+#FORM
 
-administrator.customisation-parameter.form.label.spamWordsEn = Spam words English
-administrator.customisation-parameter.form.label.spamWordsEs = Spam words Spanish
-administrator.customisation-parameter.form.label.threshold = Spam threshold
+administrator.customization-parameter.form.label.spamWordsEn = Spam words English
+administrator.customization-parameter.form.label.spamWordsEs = Spam words Spanish
+administrator.customization-parameter.form.label.threshold = Spam threshold
 
-administrator.customisation-parameter.form.button.return = Return
+administrator.customization-parameter.form.button.update = Update
+administrator.customization-parameter.form.button.return = Return

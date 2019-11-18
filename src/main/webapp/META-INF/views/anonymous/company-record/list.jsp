@@ -22,6 +22,4 @@
 	<acme:list-column code="anonymous.companyRecord.list.label.description" width="20%" path="description"/>
 	<acme:list-column code="anonymous.companyRecord.list.label.phone" width="5%" path="phone"/>
 	<acme:list-column code="anonymous.companyRecord.list.label.numberStars" width="1%" path="numberStars"/>
-	
-
 </acme:list>
