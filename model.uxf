@@ -352,8 +352,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>552</x>
-      <y>552</y>
+      <x>560</x>
+      <y>544</y>
       <w>280</w>
       <h>136</h>
     </coordinates>
@@ -474,5 +474,20 @@ Banner
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>896</x>
+      <y>472</y>
+      <w>256</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>CustomizationParameter
+--
++ spamWordsEn: String {NotBlank}
++ spamWordsEs: String {NotBlank}
++ threshold: double {Range(min = 0, max = 100)}</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

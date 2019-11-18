@@ -54,7 +54,7 @@
 			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create"/>	
 			<acme:menu-suboption code="master.menu.administrator.company-record.create" action="/administrator/company-record/create"/>	
 			<acme:menu-separator/>
-      	<acme:menu-suboption code="master.menu.administrator.customisation-parameter" action="/administrator/customisation-parameter/show"/>
+      <acme:menu-suboption code="master.menu.administrator.customization-parameter" action="/administrator/customization-parameter/show"/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 

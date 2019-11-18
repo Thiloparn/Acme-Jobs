@@ -60,7 +60,7 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 
 master.menu.administrator.announcement.list = Lista de anuncios
-master.menu.administrator.customisation-parameter = Parametros de customizacion
+master.menu.administrator.customization-parameter = Parametros de customizacion
 master.menu.administrator.dashboard.show = Mostrar Tablon de datos
 master.menu.administrator.investor-record.create = Crear registro de inversor
 master.menu.administrator.announcement.create = Crear anuncio
