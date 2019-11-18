@@ -63,6 +63,10 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement.list = Announcements lists
 master.menu.administrator.customisation-parameter = Customization Parameters
 master.menu.administrator.dashboard.show = Display Dashboard
+master.menu.administrator.commercial-banner.create = Commercial banner create
+master.menu.administrator.commercial-banner.list = Commercial anners list
+master.menu.administrator.non-commercial-banner.create = Non commercial banner create
+master.menu.administrator.non-commercial-banner.list = Non commercial banners list
 
 # master.menu.provider ########################################################
 

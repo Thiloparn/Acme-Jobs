@@ -64,6 +64,10 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement.list = Lista de anuncios
 master.menu.administrator.customisation-parameter = Parametros de customizacion
 master.menu.administrator.dashboard.show = Mostrar Tablon de datos
+master.menu.administrator.commercial-banner.create = Crear un banner comercial
+master.menu.administrator.commercial-banner.list = Lista de banners comerciales
+master.menu.administrator.non-commercial-banner.create = Crear un banner no comercial
+master.menu.administrator.non-commercial-banner.list = Lista de banners no comerciales
 
 # master.menu.provider ########################################################
 
