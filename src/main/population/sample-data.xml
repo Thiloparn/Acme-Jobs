@@ -51,7 +51,7 @@
 		<property name="deadline" value="2019/06/30 10:35"/>
 		<property name="text" value="This is the description of a request"/>
 		<property name="reward" value="9000.0 €"/>
-		<property name="ticker" value="RABCD-12345"/>
+		<property name="ticker" value="RABCD-12378"/>
 	</bean>
 	
 	<bean id="Solicit02" class="acme.entities.solicits.Solicit">
