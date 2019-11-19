@@ -1,5 +1,5 @@
 
-package acme.entities.solicits;
+package acme.entities.requests;
 
 import java.util.Date;
 
@@ -21,7 +21,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Solicit extends DomainEntity {
+public class Request_ extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 

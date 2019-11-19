@@ -31,3 +31,5 @@ administrator.challenge.form.button.return = Return
 #CHALLENGE ERRORS
 
 administrator.challenge.error.deadline.esFuturo = The deadline must be future
+administrator.challenge.error.rewardGold.esMayor = Gold reward should be bigger than silver reward
+administrator.challenge.error.rewardSilver.esMayor = Silver reward should be bigger than bronze reward

@@ -32,7 +32,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalAnnouncement", "totalCompanyRecord", "totalInvestorRecords", "minRewardsSolicit", "maxRewardsSolicit", "avgRewardsSolicit", "stdRewardsSolicit", "minRewardsOffer", "maxRewardsOffer", "avgRewardsOffer",
+		request.unbind(entity, model, "totalAnnouncement", "totalCompanyRecord", "totalInvestorRecords", "minRewardsRequest", "maxRewardsRequest", "avgRewardsRequest", "stdRewardsRequest", "minRewardsOffer", "maxRewardsOffer", "avgRewardsOffer",
 			"stdRewardsOffer", "sectorNumberCompanyRecord", "sectorNumberInvestorRecord");
 	}
 
@@ -46,10 +46,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setTotalCompanyRecord(this.repository.getTotalCompanyRecord());
 		result.setTotalInvestorRecords(this.repository.getTotalInvestorRecord());
 
-		result.setMinRewardsSolicit(this.repository.getMinRewardSolicit());
-		result.setMaxRewardsSolicit(this.repository.getMaxRewardSolicit());
-		result.setAvgRewardsSolicit(this.repository.getAvgRewardSolicit());
-		result.setStdRewardsSolicit(this.repository.getStdRewardSolicit(result.getAvgRewardsSolicit()));
+		result.setMinRewardsRequest(this.repository.getMinRewardRequest());
+		result.setMaxRewardsRequest(this.repository.getMaxRewardRequest());
+		result.setAvgRewardsRequest(this.repository.getAvgRewardRequest());
+		result.setStdRewardsRequest(this.repository.getStdRewardRequest(result.getAvgRewardsRequest()));
 
 		result.setMinRewardsOffer(this.repository.getMinRewardOffer());
 		result.setMaxRewardsOffer(this.repository.getMaxRewardOffer());

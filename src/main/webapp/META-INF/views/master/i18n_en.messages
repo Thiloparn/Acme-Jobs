@@ -30,26 +30,22 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 
-master.menu.anonymous.announcement.list = Announcements lists
-master.menu.anonymous.company-record.list = Company Records lists
+master.menu.anonymous.announcement.list = List announcements
+master.menu.anonymous.company-record.list = List company records
 master.menu.anonymous.company-record.five-stars = Best company records
-master.menu.anonymous.announcement = Announcements
-
-
-master.menu.anonymous.investor-record = Investors records
-master.menu.anonymous.investor-record.list = Investors records lists
+master.menu.anonymous.investor-record.list = List investors records
 master.menu.anonymous.investor-record.five-stars = Best investor records
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
 
-master.menu.authenticated.announcement.list = Announcements lists
-master.menu.authenticated.solicit.list = Solicits lists
-master.menu.authenticated.offer.list = Offers lists
-master.menu.authenticated.challenge.list = Challenges list
-master.menu.authenticated.investor-record.list = Investors records lists
-master.menu.authenticated.company-record.list = Company Records lists
+master.menu.authenticated.announcement.list = List announcements
+master.menu.authenticated.request.list = List requests
+master.menu.authenticated.offer.list = List offers
+master.menu.authenticated.challenge.list = List challenges
+master.menu.authenticated.investor-record.list = List investors records
+master.menu.authenticated.company-record.list = List company records
 
 # master.menu.administrator ###################################################
 
@@ -57,29 +53,28 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
-master.menu.administrator.announcement.list = Announcements lists
-master.menu.administrator.customization-parameter = Customization Parameters
-master.menu.administrator.dashboard.show = Display Dashboard
-master.menu.administrator.commercial-banner.create = Create commercial banner 
-master.menu.administrator.commercial-banner.list = List commercial banner 
-master.menu.administrator.non-commercial-banner.create = Create non commercial banner 
-master.menu.administrator.non-commercial-banner.list =  List non commercial banners
-master.menu.administrator.investor-record.create = Create investor record
-master.menu.administrator.announcement.create = Create announcement 
-master.menu.administrator.company-record.create = Create company records
+master.menu.administrator.announcement.list = List announcements
+master.menu.administrator.announcement.create = Create announcement
 master.menu.administrator.challenge.create = Create challenge
+master.menu.administrator.investor-record.create = Create investor record
+master.menu.administrator.company-record.create = Create company record
+master.menu.administrator.commercial-banner.list = List commercial banner
+master.menu.administrator.commercial-banner.create = Create commercial banner
+master.menu.administrator.non-commercial-banner.list =  List non commercial banner
+master.menu.administrator.non-commercial-banner.create = Create non commercial banner
+
+master.menu.administrator.dashboard.show = Display Dashboard
+master.menu.administrator.customization-parameter = Customization Parameters
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
-master.menu.provider.solicit.create = Create solicits
+master.menu.provider.request.create = Create request
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
-master.menu.consumer.offer.create= Create offers
+master.menu.consumer.offer.create = Create offer
 
 # master.menu.user-account ####################################################
 

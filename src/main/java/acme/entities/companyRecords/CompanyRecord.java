@@ -52,7 +52,7 @@ public class CompanyRecord extends DomainEntity {
 	@URL
 	private String				webSite;
 
-	@Pattern(regexp = "^([+][1-9]\\d{0,3}[ ])?[(][1-9]\\d{0,4}[)][ ]\\d{6,10}$")
+	@Pattern(regexp = "^([+][1-9]\\d{0,3})?([ ])?([(][1-9]\\d{0,4}[)])?([ ])?\\d{6,10}$")
 	private String				phone;
 
 	@NotBlank

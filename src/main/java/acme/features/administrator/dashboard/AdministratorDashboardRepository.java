@@ -20,17 +20,17 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(i) from InvestorRecord i")
 	Integer getTotalInvestorRecord();
 
-	@Query("select min(s.reward.amount) from Solicit s")
-	Double getMinRewardSolicit();
+	@Query("select min(s.reward.amount) from Request_ s")
+	Double getMinRewardRequest();
 
-	@Query("select max(s.reward.amount) from Solicit s")
-	Double getMaxRewardSolicit();
+	@Query("select max(s.reward.amount) from Request_ s")
+	Double getMaxRewardRequest();
 
-	@Query("select avg(s.reward.amount) from Solicit s")
-	Double getAvgRewardSolicit();
+	@Query("select avg(s.reward.amount) from Request_ s")
+	Double getAvgRewardRequest();
 
-	@Query("select sqrt(sum((s.reward.amount-?1)*(s.reward.amount-?1))/count(s)) from Solicit s")
-	Double getStdRewardSolicit(Double avg);
+	@Query("select sqrt(sum((s.reward.amount-?1)*(s.reward.amount-?1))/count(s)) from Request_ s")
+	Double getStdRewardRequest(Double avg);
 
 	@Query("select min(o.minMoney.amount) from Offer o")
 	Double getMinRewardOffer();

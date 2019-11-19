@@ -1,24 +1,24 @@
 
-package acme.features.provider.solicits;
+package acme.features.provider.request;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.solicits.Solicit;
+import acme.entities.requests.Request_;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
 public interface ProviderSolicitRepository extends AbstractRepository {
 
-	@Query("select s from Solicit s where s.id =?1")
-	Solicit findOnebyId(int id);
+	@Query("select r from Request_ r where r.id =?1")
+	Request_ findOnebyId(int id);
 
-	@Query("select s from Solicit s")
-	Collection<Solicit> findManyAll();
+	@Query("select r from Request_ r")
+	Collection<Request_> findManyAll();
 
-	@Query("Select s from Solicit s where s.ticker = ?1")
-	Solicit findOneSolicitByTicker(String ticker);
+	@Query("Select r from Request_ r where r.ticker = ?1")
+	Request_ findOneSolicitByTicker(String ticker);
 
 }

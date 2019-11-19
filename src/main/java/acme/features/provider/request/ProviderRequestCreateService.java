@@ -1,5 +1,5 @@
 
-package acme.features.provider.solicits;
+package acme.features.provider.request;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,8 +8,8 @@ import java.util.GregorianCalendar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.requests.Request_;
 import acme.entities.roles.Provider;
-import acme.entities.solicits.Solicit;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
@@ -18,7 +18,7 @@ import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class ProviderSolicitCreateService implements AbstractCreateService<Provider, Solicit> {
+public class ProviderRequestCreateService implements AbstractCreateService<Provider, Request_> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -29,14 +29,14 @@ public class ProviderSolicitCreateService implements AbstractCreateService<Provi
 	// AbstractListService<Provider, Solicit> interface --------------------
 
 	@Override
-	public boolean authorise(final Request<Solicit> request) {
+	public boolean authorise(final Request<Request_> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Solicit> request, final Solicit entity, final Errors errors) {
+	public void bind(final Request<Request_> request, final Request_ entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -45,7 +45,7 @@ public class ProviderSolicitCreateService implements AbstractCreateService<Provi
 	}
 
 	@Override
-	public void unbind(final Request<Solicit> request, final Solicit entity, final Model model) {
+	public void unbind(final Request<Request_> request, final Request_ entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -61,24 +61,24 @@ public class ProviderSolicitCreateService implements AbstractCreateService<Provi
 	}
 
 	@Override
-	public Solicit instantiate(final Request<Solicit> request) {
-		Solicit result;
+	public Request_ instantiate(final Request<Request_> request) {
+		Request_ result;
 
-		result = new Solicit();
+		result = new Request_();
 		Date hoy = new Date();
 		result.setDeadline(hoy);
 		return result;
 	}
 
 	@Override
-	public void validate(final Request<Solicit> request, final Solicit entity, final Errors errors) {
+	public void validate(final Request<Request_> request, final Request_ entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
 		Calendar calendar;
 		Date minimunDeadLine;
-		Solicit existing;
+		Request_ existing;
 
 		Money money;
 		money = entity.getReward();
@@ -107,7 +107,7 @@ public class ProviderSolicitCreateService implements AbstractCreateService<Provi
 	}
 
 	@Override
-	public void create(final Request<Solicit> request, final Solicit entity) {
+	public void create(final Request<Request_> request, final Request_ entity) {
 
 		Date moment;
 

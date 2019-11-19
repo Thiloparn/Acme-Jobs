@@ -43,9 +43,9 @@
 
 	</bean>
 	
-	<!-- Solicit -->
+	<!-- Request -->
 	
-	<bean id="Solicit01" class="acme.entities.solicits.Solicit">
+	<bean id="Request01" class="acme.entities.requests.Request_">
 		<property name="title" value="Request 01"/>
 		<property name="moment" value="2019/06/10 10:35"/>
 		<property name="deadline" value="2019/06/30 10:35"/>
@@ -54,7 +54,7 @@
 		<property name="ticker" value="RABCD-12378"/>
 	</bean>
 	
-	<bean id="Solicit02" class="acme.entities.solicits.Solicit">
+	<bean id="Request02" class="acme.entities.requests.Request_">
 		<property name="title" value="Request 02"/>
 		<property name="moment" value="2018/07/10 10:35"/>
 		<property name="deadline" value="2018/07/29 10:35"/>
@@ -63,7 +63,7 @@
 		<property name="ticker" value="RABCD-12346"/>
 	</bean>
 	
-	<bean id="Solicit03" class="acme.entities.solicits.Solicit">
+	<bean id="Request03" class="acme.entities.requests.Request_">
 		<property name="title" value="Request 03"/>
 		<property name="moment" value="2019/01/15 10:35"/>
 		<property name="deadline" value="2019/01/17 12:00"/>

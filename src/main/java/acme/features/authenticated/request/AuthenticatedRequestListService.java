@@ -1,37 +1,37 @@
 
-package acme.features.authenticated.solicits;
+package acme.features.authenticated.request;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.solicits.Solicit;
+import acme.entities.requests.Request_;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedSolicitListService implements AbstractListService<Authenticated, Solicit> {
+public class AuthenticatedRequestListService implements AbstractListService<Authenticated, Request_> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	AuthenticatedSolicitRepository repository;
+	AuthenticatedRequestRepository repository;
 
 
 	// AbstractListService<Administrator, Shout> interface --------------------
 
 	@Override
-	public boolean authorise(final Request<Solicit> request) {
+	public boolean authorise(final Request<Request_> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Solicit> request, final Solicit entity, final Model model) {
+	public void unbind(final Request<Request_> request, final Request_ entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -40,10 +40,10 @@ public class AuthenticatedSolicitListService implements AbstractListService<Auth
 	}
 
 	@Override
-	public Collection<Solicit> findMany(final Request<Solicit> request) {
+	public Collection<Request_> findMany(final Request<Request_> request) {
 		assert request != null;
 
-		Collection<Solicit> result;
+		Collection<Request_> result;
 
 		result = this.repository.findManyAll();
 

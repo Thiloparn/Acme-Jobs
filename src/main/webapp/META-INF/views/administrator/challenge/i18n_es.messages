@@ -31,3 +31,5 @@ administrator.challenge.form.button.return = Volver
 #CHALLENGE ERRORS
 
 administrator.challenge.error.deadline.esFuturo = La fecha limite debe ser futura
+administrator.challenge.error.rewardGold.esMayor = La recompensa de oro deberia de ser mayor que la de plata
+administrator.challenge.error.rewardSilver.esMayor = La recompensa de plata deberia de ser mayor que la de bronce

@@ -62,9 +62,19 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 
 		Date hoy = new Date();
 
-		if (entity.getDeadline() != null) {
+		if (!errors.hasErrors("deadline")) {
 			boolean esFuturo = hoy.before(entity.getDeadline());
 			errors.state(request, esFuturo, "deadline", "administrator.challenge.error.deadline.esFuturo");
+		}
+
+		if (!errors.hasErrors("rewardGold") || !errors.hasErrors("rewardSilver")) {
+			boolean esMayor = entity.getRewardGold().getAmount() > entity.getRewardSilver().getAmount();
+			errors.state(request, esMayor, "rewardGold", "administrator.challenge.error.rewardGold.esMayor");
+		}
+
+		if (!errors.hasErrors("rewardSilver") || !errors.hasErrors("rewardBronze")) {
+			boolean esMayor = entity.getRewardSilver().getAmount() > entity.getRewardBronze().getAmount();
+			errors.state(request, esMayor, "rewardSilver", "administrator.challenge.error.rewardSilver.esMayor");
 		}
 	}
 

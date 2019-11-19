@@ -19,10 +19,10 @@ public class Dashboard implements Serializable {
 	Integer						totalCompanyRecord;
 	Integer						totalInvestorRecords;
 
-	Double						minRewardsSolicit;
-	Double						maxRewardsSolicit;
-	Double						avgRewardsSolicit;
-	Double						stdRewardsSolicit;
+	Double						minRewardsRequest;
+	Double						maxRewardsRequest;
+	Double						avgRewardsRequest;
+	Double						stdRewardsRequest;
 
 	Double						minRewardsOffer;
 	Double						maxRewardsOffer;

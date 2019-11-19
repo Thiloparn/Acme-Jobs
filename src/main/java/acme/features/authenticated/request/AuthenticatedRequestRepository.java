@@ -1,21 +1,20 @@
 
-package acme.features.authenticated.solicits;
+package acme.features.authenticated.request;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.solicits.Solicit;
+import acme.entities.requests.Request_;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AuthenticatedSolicitRepository extends AbstractRepository {
+public interface AuthenticatedRequestRepository extends AbstractRepository {
 
-	@Query("select s from Solicit s where s.id =?1")
-	Solicit findOnebyId(int id);
+	@Query("select r from Request_ r where r.id =?1")
+	Request_ findOnebyId(int id);
 
-	@Query("select s from Solicit s")
-	Collection<Solicit> findManyAll();
-
+	@Query("select r from Request_ r")
+	Collection<Request_> findManyAll();
 }

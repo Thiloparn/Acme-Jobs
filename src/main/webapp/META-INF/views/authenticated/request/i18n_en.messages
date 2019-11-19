@@ -8,17 +8,17 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-#SOLICIT LIST
-authenticated.solicit.list.label.moment = Moment
-authenticated.solicit.list.label.deadline = Deadline
-authenticated.solicit.list.label.title = Title
+#LIST
+authenticated.request.list.label.moment = Moment
+authenticated.request.list.label.deadline = Deadline
+authenticated.request.list.label.title = Title
 
-#SOLICIT FORM
-authenticated.solicit.form.label.ticker = Ticker:
-authenticated.solicit.form.label.title = Title:
-authenticated.solicit.form.label.moment = Moment:
-authenticated.solicit.form.label.deadline = Deadline:
-authenticated.solicit.form.label.text = Text:
-authenticated.solicit.form.label.reward = Reward:
-authenticated.solicit.form.button.return = Return
+#FORM
+authenticated.request.form.label.ticker = Ticker:
+authenticated.request.form.label.title = Title:
+authenticated.request.form.label.moment = Moment:
+authenticated.request.form.label.deadline = Deadline:
+authenticated.request.form.label.text = Text:
+authenticated.request.form.label.reward = Reward:
+authenticated.request.form.button.return = Return
 
