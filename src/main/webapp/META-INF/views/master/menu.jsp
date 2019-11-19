@@ -23,10 +23,10 @@
 		
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list"/>
-      		<acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
+      			<acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.company-record.five-stars" action="/anonymous/company-record/five-stars"/>
 			<acme:menu-suboption code="master.menu.anonymous.investor-record.list" action="/anonymous/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.investor-record.five-stars" action="/anonymous/investor-record/five-stars"/>
-			<acme:menu-suboption code="master.menu.anonymous.company-record.five-stars" action="/anonymous/company-record/five-stars"/>
 		</acme:menu-option>
 		
 		<%-- COSAS DE AUTENTICADO --%>
