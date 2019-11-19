@@ -10,7 +10,7 @@ import acme.entities.requests.Request_;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface ProviderSolicitRepository extends AbstractRepository {
+public interface ProviderRequestRepository extends AbstractRepository {
 
 	@Query("select r from Request_ r where r.id =?1")
 	Request_ findOnebyId(int id);

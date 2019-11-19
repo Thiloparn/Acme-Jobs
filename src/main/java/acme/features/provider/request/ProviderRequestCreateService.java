@@ -23,7 +23,7 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	ProviderSolicitRepository repository;
+	ProviderRequestRepository repository;
 
 
 	// AbstractListService<Provider, Solicit> interface --------------------
