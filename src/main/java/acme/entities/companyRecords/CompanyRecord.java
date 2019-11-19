@@ -31,7 +31,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(indexes = {
-	@Index(columnList = "number_stars")
+	@Index(columnList = "numberStars")
 })
 public class CompanyRecord extends DomainEntity {
 
