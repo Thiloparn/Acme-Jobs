@@ -18,8 +18,8 @@
 
 <tiles-definitions>
 	
-	<definition name="provider/solicit/form" extends="master">
-		<put-attribute name="body" type="template" value="../provider/solicit/form.jsp" />
+	<definition name="provider/request_/form" extends="master">
+		<put-attribute name="body" type="template" value="../provider/request/form.jsp" />
 	</definition>
 	
 </tiles-definitions>
