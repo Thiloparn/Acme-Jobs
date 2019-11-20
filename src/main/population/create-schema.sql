@@ -88,12 +88,12 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `customisation_parameter` (
+    create table `customization_parameter` (
        `id` integer not null,
         `version` integer not null,
         `spam_words_en` varchar(255),
         `spam_words_es` varchar(255),
-        `threshold` double precision,
+        `threshold` double precision not null,
         primary key (`id`)
     ) engine=InnoDB;
 
